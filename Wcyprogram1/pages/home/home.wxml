@@ -1,0 +1,3 @@
+<!--pages/home/home.wxml-->
+<view>Hellow world</view>
+<button size="mini">按钮</button>
