@@ -1,3 +1,7 @@
 <!--pages/home/home.wxml-->
-<view>Hellow world</view>
-<button size="mini">按钮</button>
+<view>Hellow {{Coderwcy}}</view>
+<view>我的年龄：{{age}}</view>
+<view wx:for="{{student}}">{{item.name}}-{{item.age}}</view>
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap='handleBtnClick'>+</button>
+<button size="mini" bindtap='handleSubtraction'>-</button>
