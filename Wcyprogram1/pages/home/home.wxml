@@ -1,7 +1,12 @@
 <!--pages/home/home.wxml-->
-<view>Hellow {{Coderwcy}}</view>
+<view>Hellow ,{{Coderwcy}}</view>
 <view>我的年龄：{{age}}</view>
-<view wx:for="{{student}}">{{item.name}}-{{item.age}}</view>
+<view wx:for="{{student}}" wx:key='item'>{{item.name}}-{{item.age}}</view>
 <view>当前计数：{{counter}}</view>
-<button size="mini" bindtap='handleBtnClick'>+</button>
-<button size="mini" bindtap='handleSubtraction'>-</button>
+<button size="mini" bind:tap='handleBtnClick'>+</button>
+<button size="mini" bind:tap='handleSubtraction'>-</button>
+
+<button size='mini' open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+获取信息
+</button>
+<open-data type='userNickName'></open-data>

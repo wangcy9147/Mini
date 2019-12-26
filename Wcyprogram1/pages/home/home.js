@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    Coderwcy:'World',
+    Coderwcy:'I am 邱文浪',
     age:23,
     student:[
       {id:110,name: 'mike one',age:12},
@@ -23,5 +23,10 @@ Page({
     this.setData({
       counter:this.data.counter -1
     })
+  },
+
+  handleGetUserInfo(event){
+    console.log(event)
+
   }
 })
